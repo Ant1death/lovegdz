@@ -15,13 +15,6 @@ window.addEventListener('DOMContentLoaded', e => {
       leftMenu.classList.toggle('active');
     });
   }
-  const search = document.querySelector('.search input');
-  search.addEventListener('mouseover', e => {
-    search.placeholder = '';
-  });
-  search.addEventListener('mouseout', e => {
-    search.placeholder = 'Решебники и рабочие тетради';
-  });
   window.addEventListener('scroll', e => {
     let navContainer = document.querySelector('.container-fluid');
     let mainArea = document.querySelector('.main-area-2');
