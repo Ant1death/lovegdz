@@ -51,6 +51,7 @@
     border-radius: 5px 5px 0 0
     border: 0
     background: 0 0 !important
+    margin-bottom: 10px
 
 
 .main-table table .main-table-head th 
@@ -245,7 +246,10 @@ footer .container.left-side
     margin: 0 -13px
     a
         width: 100%
-        display: block
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
         img 
             width: 100%
 
@@ -529,7 +533,6 @@ ul.class-links li
 
 .tab-content 
     margin-bottom: 20px
-    padding: 25px 15px
     border-radius: 0 0 4px 4px
     border-left: 1px solid #e7e1d9
     border-right: 1px solid #e7e1d9
@@ -844,6 +847,7 @@ ul.predmet-links li:hover+li a:after,ul.predmet-links li.active+li a:after
 .table
     width: 100%
     max-width: 100%
+    border-collapse: collapse
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td
     padding: 8px
     line-height: 1.42857143
@@ -1136,7 +1140,9 @@ ul.class-links .class-link-all a:hover
     display: block
     position: relative
     margin-bottom: 10px
-
+@media(max-width: 1199px)
+    .class
+        margin-bottom: 20px
 
 .class:hover 
     text-decoration: none
@@ -2269,7 +2275,7 @@ pre code
     flex-wrap: wrap
 .card-wrapper
     display: grid
-    grid-template-rows: 55px 1fr
+    grid-template-rows: 80px 1fr
     grid-template-columns: 140px 1fr
     column-gap: 20px
     row-gap: 20px
@@ -2302,6 +2308,12 @@ pre code
     font-weight: 700
     font-size: 14px
     transition: all .2s
+.soc-buttons
+    padding: 0 30px
+.vk-comments
+    padding: 0 30px
+.padding-wrapper
+    padding: 0 30px
 @media(max-width: 1199px)
     .search
         width: 500px
@@ -2351,12 +2363,28 @@ pre code
     .breadcrumb
         margin: 0
     .card-wrapper
-        grid-template-rows: 180px 1fr
+        grid-template-rows: auto 1fr
         grid-template-columns: 140px 1fr
         .text-block
             grid-column: 1/3
+    .soc-buttons
+        padding: 0 15px
+    .vk-comments
+        padding: 0 15px
+    .padding-wrapper
+        padding: 0 30px
 @media(max-width: 424px)
     .footer-wrapper
         flex-direction: column
         align-items: center
         justify-content: center
+@media (min-width: 1020px) and (max-width: 1023px)
+    footer .container.left-side
+        padding-left: 30px
+        padding-right: 5px
+        max-width: 773px
+@media (min-width: 992px) and (max-width: 1020px)
+    footer .container.left-side
+        padding-left: 27px
+        padding-right: 5px
+        max-width: 745px
